@@ -67,10 +67,10 @@
         <div id="home-page" style="display: none;">
             <h2>Выберите лабораторную работу:</h2>
             <div class="buttons">
-                <button onclick="openLab(1)">Лаба 1</button>
-                <button onclick="openLab(2)">Лаба 2</button>
-                <button onclick="openLab(3)">Лаба 3</button>
-                <button onclick="openLab(4)">Лаба 4</button>
+                <button onclick="window.open('https://github.com/gulidovalera/laba/blob/лаба-1/Лаба-1%20в1.py', '_blank')">Лаба 1</button>
+                <button onclick="window.open('https://github.com/ваш-профиль/лаба2-код', '_blank')">Лаба 2</button>
+                <button onclick="window.open('https://github.com/ваш-профиль/лаба3-код', '_blank')">Лаба 3</button>
+                <button onclick="window.open('https://github.com/ваш-профиль/лаба4-код', '_blank')">Лаба 4</button>
             </div>
         </div>
         <div id="main-content">
@@ -101,10 +101,6 @@
         function showHome() {
             document.getElementById('home-page').style.display = 'block';
             document.getElementById('main-content').style.display = 'none';
-        }
-
-        function openLab(labNumber) {
-            alert(`Вы выбрали Лаба ${labNumber}. Здесь можно добавить переход на страницу лабораторной работы.`);
         }
     </script>
 </body>
