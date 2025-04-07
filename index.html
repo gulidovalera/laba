@@ -89,17 +89,22 @@
     <nav>
         <a href="#" onclick="showSection('home')">Главная</a>
         <a href="#" onclick="showSection('laba1')">Лаба 1</a>
+        <a href="#" onclick="showSection('laba2')">Лаба 2</a>
+        <a href="#" onclick="showSection('laba3')">Лаба 3</a>
+        <a href="#" onclick="showSection('laba4')">Лаба 4</a>
     </nav>
     <main>
+        <!-- Главная страница -->
         <div id="home" class="section">
             <h2>Выберите лабораторную работу:</h2>
             <div class="buttons">
                 <button onclick="showSection('laba1')">Лаба 1</button>
-                <button onclick="window.open('https://github.com/ваш-профиль/лаба2-код', '_blank')">Лаба 2</button>
-                <button onclick="window.open('https://github.com/ваш-профиль/лаба3-код', '_blank')">Лаба 3</button>
-                <button onclick="window.open('https://github.com/ваш-профиль/лаба4-код', '_blank')">Лаба 4</button>
+                <button onclick="showSection('laba2')">Лаба 2</button>
+                <button onclick="showSection('laba3')">Лаба 3</button>
+                <button onclick="showSection('laba4')">Лаба 4</button>
             </div>
         </div>
+        <!-- Лаба 1 -->
         <div id="laba1" class="section hidden">
             <header>
                 <h1>Лаба 1</h1>
@@ -114,14 +119,77 @@
             </section>
             <section id="code">
                 <h2>Код</h2>
-                <p>
-                    Ознакомьтесь с кодом на GitHub: 
-                    <a href="https://github.com/gulidovalera/laba/blob/лаба-1/Лаба-1%20в1.py" target="_blank">Лаба 1 - Код</a>
-                </p>
+                <p>Добавьте ваш код на Python сюда.</p>
             </section>
             <section id="errors">
                 <h2>Ошибки</h2>
-                <p>Здесь будет текст об ошибках, допущенных во время выполнения лабораторной работы.</p>
+                <p>Здесь будет текст об ошибках.</p>
+            </section>
+        </div>
+        <!-- Лаба 2 -->
+        <div id="laba2" class="section hidden">
+            <header>
+                <h1>Лаба 2</h1>
+            </header>
+            <section id="goals">
+                <h2>Цели</h2>
+                <p>Здесь будет текст о целях лабораторной работы.</p>
+            </section>
+            <section id="method">
+                <h2>Методика</h2>
+                <p>Здесь будет описание методики лабораторной работы.</p>
+            </section>
+            <section id="code">
+                <h2>Код</h2>
+                <p>Добавьте ваш код на Python сюда.</p>
+            </section>
+            <section id="errors">
+                <h2>Ошибки</h2>
+                <p>Здесь будет текст об ошибках.</p>
+            </section>
+        </div>
+        <!-- Лаба 3 -->
+        <div id="laba3" class="section hidden">
+            <header>
+                <h1>Лаба 3</h1>
+            </header>
+            <section id="goals">
+                <h2>Цели</h2>
+                <p>Здесь будет текст о целях лабораторной работы.</p>
+            </section>
+            <section id="method">
+                <h2>Методика</h2>
+                <p>Здесь будет описание методики лабораторной работы.</p>
+            </section>
+            <section id="code">
+                <h2>Код</h2>
+                <p>Добавьте ваш код на Python сюда.</p>
+            </section>
+            <section id="errors">
+                <h2>Ошибки</h2>
+                <p>Здесь будет текст об ошибках.</p>
+            </section>
+        </div>
+        <!-- Лаба 4 -->
+        <div id="laba4" class="section hidden">
+            <header>
+                <h1>Лаба 4</h1>
+            </header>
+            <section id="goals">
+                <h2>Цели</h2>
+                <p>Здесь будет текст о целях лабораторной работы.</p>
+            </section>
+            <section id="method">
+                <h2>Методика</h2>
+                <p>Здесь будет описание методики лабораторной работы.</p>
+            </section>
+            <section id="code">
+                <h2>Код</h2>
+                <p>Добавьте ваш код на Python сюда.</p>
+            </section>
+            <section id="errors">
+                <h2>Ошибки</h2>
+                <p>Здесь будет текст об ошибках.</p>
             </section>
         </div>
     </main>
