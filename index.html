@@ -11,17 +11,22 @@
             padding: 0;
             background: linear-gradient(to bottom, #00aaff, #0066cc);
             color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         header {
             padding: 20px;
             text-align: center;
             background-color: #004c99;
+            width: 100%;
         }
         nav {
             display: flex;
             justify-content: center;
             background-color: #005ea6;
             padding: 10px;
+            width: 100%;
         }
         nav a {
             color: white;
@@ -32,6 +37,25 @@
         }
         nav a:hover {
             background-color: #007ac1;
+        }
+        main {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 90%;
+            margin-top: 20px;
+        }
+        .content {
+            width: 70%;
+        }
+        .sidebar {
+            width: 25%;
+            display: flex;
+            justify-content: center;
+        }
+        .sidebar img {
+            max-width: 100%;
+            border-radius: 10px;
         }
         .buttons {
             display: flex;
@@ -52,6 +76,13 @@
         .buttons button:hover {
             background-color: #005ea6;
         }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            background-color: #004c99;
+            padding: 10px;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
@@ -64,18 +95,23 @@
         <a href="#contact">Контакты</a>
     </nav>
     <main>
-        <div id="home-page" style="display: none;">
-            <h2>Выберите лабораторную работу:</h2>
-            <div class="buttons">
-                <button onclick="window.open('https://github.com/gulidovalera/laba/blob/лаба-1/Лаба-1%20в1.py', '_blank')">Лаба 1</button>
-                <button onclick="window.open('https://github.com/ваш-профиль/лаба2-код', '_blank')">Лаба 2</button>
-                <button onclick="window.open('https://github.com/ваш-профиль/лаба3-код', '_blank')">Лаба 3</button>
-                <button onclick="window.open('https://github.com/ваш-профиль/лаба4-код', '_blank')">Лаба 4</button>
+        <div class="content">
+            <div id="home-page" style="display: none;">
+                <h2>Выберите лабораторную работу:</h2>
+                <div class="buttons">
+                    <button onclick="window.open('https://github.com/gulidovalera/laba/blob/лаба-1/Лаба-1%20в1.py', '_blank')">Лаба 1</button>
+                    <button onclick="window.open('https://github.com/ваш-профиль/лаба2-код', '_blank')">Лаба 2</button>
+                    <button onclick="window.open('https://github.com/ваш-профиль/лаба3-код', '_blank')">Лаба 3</button>
+                    <button onclick="window.open('https://github.com/ваш-профиль/лаба4-код', '_blank')">Лаба 4</button>
+                </div>
+            </div>
+            <div id="main-content">
+                <h2>Привет, мир!</h2>
+                <p>Это моя обновленная тестовая страница на тему океана.</p>
             </div>
         </div>
-        <div id="main-content">
-            <h2>Привет, мир!</h2>
-            <p>Это моя обновленная тестовая страница на тему океана.</p>
+        <div class="sidebar">
+            <img src="IMAGE_URL_HERE" alt="Plankton">
         </div>
     </main>
     <footer>
@@ -85,7 +121,6 @@
     <script type="text/javascript">
        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
        m[i].l=1*new Date();
-       for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
        ym(100820389, "init", {
