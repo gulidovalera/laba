@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Моя океанская страница</title>
+    <title>Морские глубины Python</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <style>
         :root {
             --deep-blue: #005b96;
@@ -11,7 +12,8 @@
             --light-blue: #00b4d8;
             --sky-blue: #90e0ef;
             --foam: #caf0f8;
-            --transition: all 0.4s ease-in-out;
+            --transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+            --wave-height: 120px;
         }
         
         * {
@@ -20,7 +22,7 @@
         }
         
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Montserrat', sans-serif;
             margin: 0;
             padding: 0;
             background: linear-gradient(135deg, var(--deep-blue), var(--ocean-blue));
@@ -29,47 +31,72 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            line-height: 1.6;
+            line-height: 1.8;
+            overflow-x: hidden;
         }
         
         header {
-            padding: 30px;
+            padding: 40px 30px;
             text-align: center;
-            background: rgba(0, 91, 150, 0.8);
+            background: rgba(0, 91, 150, 0.85);
             width: 100%;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            backdrop-filter: blur(5px);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+            backdrop-filter: blur(8px);
+            position: relative;
+            z-index: 10;
+            border-bottom: 1px solid rgba(202, 240, 248, 0.1);
         }
         
         header h1 {
             margin: 0;
-            font-size: 2.5rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            font-size: 2.8rem;
+            font-family: 'Playfair Display', serif;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
             background: linear-gradient(to right, var(--sky-blue), var(--foam));
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
+            letter-spacing: 1px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        header h1::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(to right, var(--light-blue), var(--sky-blue));
+            border-radius: 3px;
         }
         
         nav {
             display: flex;
             justify-content: center;
-            background: rgba(0, 119, 182, 0.9);
+            background: rgba(0, 119, 182, 0.95);
             padding: 15px;
             width: 100%;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
-            backdrop-filter: blur(5px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(8px);
+            position: relative;
+            z-index: 9;
         }
         
         nav a {
             color: var(--foam);
             text-decoration: none;
             padding: 12px 25px;
-            margin: 0 5px;
+            margin: 0 8px;
             border-radius: 30px;
-            font-weight: 500;
+            font-weight: 600;
             position: relative;
             overflow: hidden;
+            font-size: 1.1rem;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease, transform 0.2s ease;
         }
         
         nav a::before {
@@ -79,30 +106,39 @@
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.25), transparent);
             transition: var(--transition);
         }
         
         nav a:hover {
-            background-color: var(--light-blue);
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(0, 180, 216, 0.4);
+            background-color: rgba(0, 180, 216, 0.6);
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 8px 25px rgba(0, 180, 216, 0.5);
+            color: white;
         }
         
         nav a:hover::before {
             left: 100%;
         }
         
+        nav a.active {
+            background-color: var(--light-blue);
+            box-shadow: 0 4px 15px rgba(0, 180, 216, 0.6);
+        }
+        
         main {
             width: 90%;
             max-width: 1200px;
-            margin: 30px auto;
+            margin: 40px auto;
             opacity: 1;
-            animation: fadeIn 0.6s ease-out;
+            animation: fadeIn 0.8s ease-out;
+            position: relative;
+            z-index: 5;
+            flex: 1;
         }
         
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
+            from { opacity: 0; transform: translateY(30px); }
             to { opacity: 1; transform: translateY(0); }
         }
         
@@ -110,22 +146,26 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 25px;
-            margin-top: 30px;
+            gap: 30px;
+            margin-top: 40px;
         }
         
         .buttons button {
             background: linear-gradient(135deg, var(--light-blue), var(--ocean-blue));
             color: white;
             border: none;
-            padding: 15px 30px;
+            padding: 18px 35px;
             border-radius: 50px;
             cursor: pointer;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             font-weight: 600;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
             position: relative;
             overflow: hidden;
+            letter-spacing: 0.5px;
+            min-width: 220px;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255, 255, 255, 0.1);
         }
         
         .buttons button::after {
@@ -135,13 +175,14 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), transparent);
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), transparent);
             transform: translateX(-100%);
         }
         
         .buttons button:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0, 180, 216, 0.4);
+            transform: translateY(-7px) scale(1.03);
+            box-shadow: 0 12px 30px rgba(0, 180, 216, 0.5);
+            background: linear-gradient(135deg, var(--sky-blue), var(--light-blue));
         }
         
         .buttons button:hover::after {
@@ -153,26 +194,42 @@
         }
         
         .section {
-            background: rgba(0, 91, 150, 0.7);
-            border-radius: 15px;
-            padding: 30px;
-            margin-bottom: 30px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            backdrop-filter: blur(8px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(0, 91, 150, 0.75);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 150px;
+            height: 150px;
+            background: radial-gradient(circle, rgba(144, 224, 239, 0.1) 0%, transparent 70%);
         }
         
         .section h2 {
             margin-top: 0;
             color: var(--sky-blue);
-            font-size: 1.8rem;
-            border-bottom: 2px solid var(--light-blue);
-            padding-bottom: 10px;
+            font-size: 2rem;
+            font-family: 'Playfair Display', serif;
+            border-bottom: 3px solid var(--light-blue);
+            padding-bottom: 12px;
             display: inline-block;
+            letter-spacing: 0.5px;
+            margin-bottom: 25px;
         }
         
         .section p {
-            font-size: 1.1rem;
+            font-size: 1.15rem;
+            margin-bottom: 25px;
         }
         
         .section a {
@@ -180,12 +237,13 @@
             text-decoration: none;
             font-weight: 600;
             position: relative;
+            transition: all 0.3s ease;
         }
         
         .section a::after {
             content: '';
             position: absolute;
-            bottom: -2px;
+            bottom: -3px;
             left: 0;
             width: 0;
             height: 2px;
@@ -195,6 +253,7 @@
         
         .section a:hover {
             color: var(--foam);
+            text-shadow: 0 0 5px rgba(202, 240, 248, 0.5);
         }
         
         .section a:hover::after {
@@ -204,17 +263,21 @@
         footer {
             margin-top: auto;
             text-align: center;
-            background: rgba(0, 91, 150, 0.9);
-            padding: 20px;
+            background: rgba(0, 91, 150, 0.95);
+            padding: 25px;
             width: 100%;
-            box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(5px);
+            box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.15);
+            backdrop-filter: blur(8px);
+            position: relative;
+            z-index: 5;
+            border-top: 1px solid rgba(202, 240, 248, 0.1);
         }
         
         footer p {
             margin: 0;
-            font-size: 1rem;
+            font-size: 1.1rem;
             color: var(--foam);
+            letter-spacing: 0.5px;
         }
         
         .hidden {
@@ -223,32 +286,197 @@
         }
         
         /* Анимация волн для фона */
-        body::after {
-            content: '';
+        .ocean-waves {
             position: fixed;
             bottom: 0;
             left: 0;
             width: 100%;
-            height: 100px;
-            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(202, 240, 248, 0.2)" d="M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>');
+            height: var(--wave-height);
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(202, 240, 248, 0.25)" d="M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>');
             background-size: cover;
-            background-repeat: no-repeat;
-            z-index: -1;
-            animation: wave 10s linear infinite;
+            background-repeat: repeat-x;
+            z-index: 1;
+            animation: wave 15s linear infinite;
+        }
+        
+        .ocean-waves:nth-child(2) {
+            bottom: -20px;
+            opacity: 0.5;
+            animation: wave 12s linear infinite reverse;
+            height: calc(var(--wave-height) + 20px);
+        }
+        
+        .ocean-waves:nth-child(3) {
+            bottom: -40px;
+            opacity: 0.3;
+            animation: wave 18s linear infinite;
+            height: calc(var(--wave-height) + 40px);
         }
         
         @keyframes wave {
             0% { background-position-x: 0; }
             100% { background-position-x: 1440px; }
         }
+        
+        /* Декоративные элементы */
+        .bubble {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(202, 240, 248, 0.15);
+            z-index: -1;
+        }
+        
+        .bubble-1 {
+            width: 120px;
+            height: 120px;
+            top: 20%;
+            left: 5%;
+            animation: float 12s ease-in-out infinite;
+        }
+        
+        .bubble-2 {
+            width: 80px;
+            height: 80px;
+            top: 60%;
+            right: 8%;
+            animation: float 15s ease-in-out infinite reverse;
+        }
+        
+        .bubble-3 {
+            width: 200px;
+            height: 200px;
+            bottom: 30%;
+            left: 10%;
+            animation: float 20s ease-in-out infinite;
+            opacity: 0.1;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-30px) rotate(5deg); }
+        }
+        
+        /* Карточки для разделов */
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .card {
+            background: rgba(0, 119, 182, 0.6);
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(202, 240, 248, 0.1);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+            background: rgba(0, 119, 182, 0.8);
+        }
+        
+        .card h3 {
+            color: var(--sky-blue);
+            margin-top: 0;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .card p {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(144, 224, 239, 0.1) 0%, transparent 70%);
+            transition: all 0.6s ease;
+        }
+        
+        .card:hover::before {
+            top: 0;
+            right: 0;
+        }
+        
+        /* Анимация для кода */
+        .code-link {
+            display: inline-block;
+            margin: 10px 15px 10px 0;
+            padding: 12px 20px;
+            background: rgba(0, 119, 182, 0.4);
+            border-radius: 8px;
+            border-left: 4px solid var(--light-blue);
+            transition: all 0.3s ease;
+        }
+        
+        .code-link:hover {
+            background: rgba(0, 119, 182, 0.7);
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(0, 180, 216, 0.3);
+        }
+        
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            nav {
+                flex-wrap: wrap;
+                padding: 10px;
+            }
+            
+            nav a {
+                padding: 8px 15px;
+                margin: 5px;
+                font-size: 0.9rem;
+            }
+            
+            .section {
+                padding: 25px;
+            }
+            
+            .buttons button {
+                padding: 15px 25px;
+                font-size: 1rem;
+                min-width: 180px;
+            }
+            
+            .card-container {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
+    <!-- Декоративные элементы -->
+    <div class="bubble bubble-1"></div>
+    <div class="bubble bubble-2"></div>
+    <div class="bubble bubble-3"></div>
+    
+    <!-- Волны -->
+    <div class="ocean-waves"></div>
+    <div class="ocean-waves"></div>
+    <div class="ocean-waves"></div>
+    
     <header>
-        <h1>Добро пожаловать в Python</h1>
+        <h1>Морские глубины Python</h1>
     </header>
     <nav>
-        <a href="#" onclick="showSection('home')">Главная</a>
+        <a href="#" onclick="showSection('home')" class="active">Главная</a>
         <a href="#" onclick="showSection('laba1')">Лаба 1</a>
         <a href="#" onclick="showSection('laba2')">Лаба 2</a>
         <a href="#" onclick="showSection('laba3')">Лаба 3</a>
@@ -257,119 +485,162 @@
     <main>
         <!-- Главная страница -->
         <div id="home" class="section">
-            <h2>Выберите лабораторную работу:</h2>
+            <h2>Исследуйте лабораторные работы</h2>
+            <p>Добро пожаловать в подводный мир программирования на Python. Выберите лабораторную работу, чтобы начать своё погружение в глубины кода.</p>
+            
             <div class="buttons">
-                <button onclick="showSection('laba1')">Лаба 1</button>
-                <button onclick="showSection('laba2')">Лаба 2</button>
-                <button onclick="showSection('laba3')">Лаба 3</button>
-                <button onclick="showSection('laba4')">Лаба 4</button>
+                <button onclick="showSection('laba1')">
+                    <i class="fas fa-flask"></i> Лаба 1
+                </button>
+                <button onclick="showSection('laba2')">
+                    <i class="fas fa-vial"></i> Лаба 2
+                </button>
+                <button onclick="showSection('laba3')">
+                    <i class="fas fa-atom"></i> Лаба 3
+                </button>
+                <button onclick="showSection('laba4')">
+                    <i class="fas fa-microscope"></i> Лаба 4
+                </button>
+            </div>
+            
+            <div class="card-container">
+                <div class="card">
+                    <h3>Лаба 1</h3>
+                    <p>Первое погружение в Python. Основы синтаксиса и простые операции.</p>
+                </div>
+                <div class="card">
+                    <h3>Лаба 2</h3>
+                    <p>Работа с функциями и структурами данных. Углубляем знания.</p>
+                </div>
+                <div class="card">
+                    <h3>Лаба 3</h3>
+                    <p>Объектно-ориентированное программирование. Создаём свои классы.</p>
+                </div>
+                <div class="card">
+                    <h3>Лаба 4</h3>
+                    <p>Работа с файлами и исключениями. Продвинутые техники.</p>
+                </div>
             </div>
         </div>
+        
         <!-- Лаба 1 -->
         <div id="laba1" class="section hidden">
-            <header>
-                <h1>Лаба 1</h1>
-            </header>
-            <section id="goals">
-                <h2>Цели</h2>
-                <p>Здесь будет текст о целях лабораторной работы.</p>
-            </section>
-            <section id="method">
-                <h2>Методика</h2>
-                <p>Здесь будет описание методики лабораторной работы.</p>
-            </section>
-            <section id="code">
-                <h2>Код</h2>
-                <p>
-                Ознакомьтесь с кодом на GitHub: 
-                    <a href="https://github.com/gulidovalera/laba/blob/лаба-1/Лаба-1%20в1.py" target="_blank">Лаба 1 - Код</a>
-                </p>
-            </section>
-            <section id="errors">
-                <h2>Ошибки</h2>
-                <p>Здесь будет текст об ошибках.</p>
-            </section>
+            <h2>Лабораторная работа 1</h2>
+            <p>Первое погружение в мир Python. Изучение основных конструкций языка.</p>
+            
+            <div class="card-container">
+                <div class="card">
+                    <h3>Цели</h3>
+                    <p>Ознакомиться с базовым синтаксисом Python, научиться работать с переменными, типами данных и простыми операциями.</p>
+                </div>
+                <div class="card">
+                    <h3>Методика</h3>
+                    <p>Работа ведётся в среде Jupyter Notebook. Изучаются основные конструкции языка на практических примерах.</p>
+                </div>
+                <div class="card">
+                    <h3>Код</h3>
+                    <p>
+                        <a href="https://github.com/gulidovalera/laba/blob/лаба-1/Лаба-1%20в1.py" target="_blank" class="code-link">Лаба 1 - Код</a>
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>Ошибки</h3>
+                    <p>На данном этапе возможны синтаксические ошибки, связанные с невнимательностью к отступам и регистру.</p>
+                </div>
+            </div>
         </div>
+        
         <!-- Лаба 2 -->
         <div id="laba2" class="section hidden">
-            <header>
-                <h1>Лаба 2</h1>
-            </header>
-            <section id="goals">
-                <h2>Цели</h2>
-                <p>Здесь будет текст о целях лабораторной работы.</p>
-            </section>
-            <section id="method">
-                <h2>Методика</h2>
-                <p>Здесь будет описание методики лабораторной работы.</p>
-            </section>
-            <section id="code">
-                <h2>Код</h2>
-                    Ознакомьтесь с кодом на GitHub: 
-                    <a href="https://github.com/gulidovalera/laba/blob/лаба-1/лаба2%20(1).py" target="_blank">Лаба 2 - Код</a>
-                </p>
-            </section>
-            <section id="errors">
-                <h2>Ошибки</h2>
-                <p>Здесь будет текст об ошибках.</p>
-            </section>
+            <h2>Лабораторная работа 2</h2>
+            <p>Углубление в Python: функции и структуры данных.</p>
+            
+            <div class="card-container">
+                <div class="card">
+                    <h3>Цели</h3>
+                    <p>Научиться создавать и использовать функции, изучить основные структуры данных: списки, словари, кортежи.</p>
+                </div>
+                <div class="card">
+                    <h3>Методика</h3>
+                    <p>Практическое создание функций различной сложности, манипуляции со структурами данных.</p>
+                </div>
+                <div class="card">
+                    <h3>Код</h3>
+                    <p>
+                        <a href="https://github.com/gulidovalera/laba/blob/лаба-1/лаба2%20(1).py" target="_blank" class="code-link">Лаба 2 - Код</a>
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>Ошибки</h3>
+                    <p>Типичные ошибки: неправильная передача аргументов, изменение неизменяемых структур данных.</p>
+                </div>
+            </div>
         </div>
+        
         <!-- Лаба 3 -->
         <div id="laba3" class="section hidden">
-            <header>
-                <h1>Лаба 3</h1>
-            </header>
-            <section id="goals">
-                <h2>Цели</h2>
-                <p>Здесь будет текст о целях лабораторной работы.</p>
-            </section>
-            <section id="method">
-                <h2>Методика</h2>
-                <p>Здесь будет описание методики лабораторной работы.</p>
-            </section>
-            <section id="code">
-                <h2>Код</h2>
-                Ознакомьтесь с кодом на GitHub: 
-                    <a href="https://github.com/gulidovalera/laba/blob/лаба-1/В1задание1(2).py" target="_blank">Лаба 3 задание 1 - Код</a>
-                    <a href="https://github.com/gulidovalera/laba/blob/лаба-1/%23В3задание2(2).py" target="_blank">Лаба 3 задание 2 - Код</a>
-                </p>
-            </section>
-            <section id="errors">
-                <h2>Ошибки</h2>
-                <p>Здесь будет текст об ошибках.</p>
-            </section>
+            <h2>Лабораторная работа 3</h2>
+            <p>Объектно-ориентированное программирование в Python.</p>
+            
+            <div class="card-container">
+                <div class="card">
+                    <h3>Цели</h3>
+                    <p>Освоить принципы ООП: классы, объекты, наследование, инкапсуляция, полиморфизм.</p>
+                </div>
+                <div class="card">
+                    <h3>Методика</h3>
+                    <p>Создание классов и объектов, работа с наследованием и магическими методами.</p>
+                </div>
+                <div class="card">
+                    <h3>Код</h3>
+                    <p>
+                        <a href="https://github.com/gulidovalera/laba/blob/лаба-1/В1задание1(2).py" target="_blank" class="code-link">Задание 1</a>
+                        <a href="https://github.com/gulidovalera/laba/blob/лаба-1/%23В3задание2(2).py" target="_blank" class="code-link">Задание 2</a>
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>Ошибки</h3>
+                    <p>Сложности с пониманием self, неправильное использование наследования, ошибки в инициализации объектов.</p>
+                </div>
+            </div>
         </div>
+        
         <!-- Лаба 4 -->
         <div id="laba4" class="section hidden">
-            <header>
-                <h1>Лаба 4</h1>
-            </header>
-            <section id="goals">
-                <h2>Цели</h2>
-                <p>Здесь будет текст о целях лабораторной работы.</p>
-            </section>
-            <section id="method">
-                <h2>Методика</h2>
-                <p>Здесь будет описание методики лабораторной работы.</p>
-            </section>
-            <section id="code">
-                <h2>Код</h2>
-                Ознакомьтесь с кодом на GitHub: 
-                    <a href="https://github.com/gulidovalera/laba/blob/лаба-1/лаба4_В3%20биопитон%20с%20окном%20для%20файла.py" target="_blank">Лаба 4 - Код</a>
-                </p>
-            </section>
-            <section id="errors">
-                <h2>Ошибки</h2>
-                <p>Здесь будет текст об ошибках.</p>
-            </section>
+            <h2>Лабораторная работа 4</h2>
+            <p>Работа с файлами и обработка исключений.</p>
+            
+            <div class="card-container">
+                <div class="card">
+                    <h3>Цели</h3>
+                    <p>Научиться читать и записывать данные в файлы, обрабатывать исключительные ситуации.</p>
+                </div>
+                <div class="card">
+                    <h3>Методика</h3>
+                    <p>Практическая работа с файлами разных форматов, создание обработчиков исключений.</p>
+                </div>
+                <div class="card">
+                    <h3>Код</h3>
+                    <p>
+                        <a href="https://github.com/gulidovalera/laba/blob/лаба-1/лаба4_В3%20биопитон%20с%20окном%20для%20файла.py" target="_blank" class="code-link">Лаба 4 - Код</a>
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>Ошибки</h3>
+                    <p>Типичные проблемы: забытое закрытие файлов, неправильная обработка кодировок, неполные блоки try-except.</p>
+                </div>
+            </div>
         </div>
     </main>
     <footer>
-        <p>© 2025 1 курс Python. Все права защищены.</p>
+        <p>© 2025 Подводный мир Python. Все права защищены.</p>
     </footer>
+    
     <script>
         function showSection(sectionId) {
             const sections = document.querySelectorAll('.section');
+            const navLinks = document.querySelectorAll('nav a');
+            
             sections.forEach(section => {
                 if (section.id === sectionId) {
                     section.style.display = 'block';
@@ -386,12 +657,77 @@
                 }
             });
             
+            navLinks.forEach(link => {
+                if (link.getAttribute('onclick').includes(sectionId)) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+            
             // Плавная прокрутка к верху страницы
             window.scrollTo({
                 top: 0,
                 behavior: 'smooth'
             });
+            
+            // Добавляем эффект волны при переключении
+            if (sectionId !== 'home') {
+                const waveEffect = document.createElement('div');
+                waveEffect.className = 'ocean-waves';
+                waveEffect.style.position = 'absolute';
+                waveEffect.style.bottom = '0';
+                waveEffect.style.left = '0';
+                waveEffect.style.width = '100%';
+                waveEffect.style.height = '100px';
+                waveEffect.style.animation = 'wave 3s ease-out';
+                waveEffect.style.opacity = '0';
+                waveEffect.style.zIndex = '10';
+                
+                document.getElementById(sectionId).appendChild(waveEffect);
+                
+                setTimeout(() => {
+                    waveEffect.style.opacity = '0.3';
+                    setTimeout(() => {
+                        waveEffect.style.opacity = '0';
+                        setTimeout(() => {
+                            waveEffect.remove();
+                        }, 1000);
+                    }, 3000);
+                }, 10);
+            }
         }
+        
+        // Создаём случайные пузырьки
+        function createBubbles() {
+            const bubblesCount = 8;
+            const body = document.body;
+            
+            for (let i = 0; i < bubblesCount; i++) {
+                const bubble = document.createElement('div');
+                bubble.className = 'bubble';
+                
+                const size = Math.random() * 60 + 20;
+                const posX = Math.random() * 100;
+                const posY = Math.random() * 100;
+                const delay = Math.random() * 15;
+                const duration = Math.random() * 15 + 10;
+                
+                bubble.style.width = `${size}px`;
+                bubble.style.height = `${size}px`;
+                bubble.style.left = `${posX}%`;
+                bubble.style.top = `${posY}%`;
+                bubble.style.animation = `float ${duration}s ease-in-out ${delay}s infinite`;
+                bubble.style.opacity = Math.random() * 0.3 + 0.1;
+                
+                body.appendChild(bubble);
+            }
+        }
+        
+        // Инициализация
+        document.addEventListener('DOMContentLoaded', () => {
+            createBubbles();
+        });
     </script>
 </body>
 </html>
