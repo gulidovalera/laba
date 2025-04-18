@@ -1,0 +1,766 @@
+LOCUS       KM587010                1872 bp    mRNA    linear   PLN 24-DEC-2014
+DEFINITION  Solanum lycopersicum cultivar Moneymaker phosphatidylinositol
+            phospholipase C 5 (PLC5) mRNA, complete cds.
+ACCESSION   KM587010
+VERSION     KM587010.1
+KEYWORDS    .
+SOURCE      Solanum lycopersicum (Lycopersicon esculentum)
+  ORGANISM  Solanum lycopersicum
+            Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+            Spermatophyta; Magnoliopsida; eudicotyledons; Gunneridae;
+            Pentapetalae; asterids; lamiids; Solanales; Solanaceae;
+            Solanoideae; Solaneae; Solanum; Solanum subgen. Lycopersicon.
+REFERENCE   1  (bases 1 to 1872)
+  AUTHORS   Abd-El-Haliem,A.M. and Joosten,M.H.A.J.
+  TITLE     Biochemical characterization of the tomato
+            phosphatidylinositol-specific phospholipase C (PI-PLC) family and
+            its role in plant immunity
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 1872)
+  AUTHORS   Abd-El-Haliem,A.M. and Joosten,M.H.A.J.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (17-SEP-2014) Laboratory of Phytopathology, Wageningen
+            University, Droevendaalsesteeg 1, Wageningen, Gelderland 6708 PB,
+            Netherlands
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1872
+                     /organism="Solanum lycopersicum"
+                     /mol_type="mRNA"
+                     /cultivar="Moneymaker"
+                     /db_xref="taxon:4081"
+     gene            1..1872
+                     /gene="PLC5"
+                     /note="SlPLC5"
+     CDS             38..1819
+                     /gene="PLC5"
+                     /EC_number="3.1.4.11"
+                     /note="SlPLC5"
+                     /codon_start=1
+                     /product="phosphatidylinositol phospholipase C 5"
+                     /protein_id="AJA33385.1"
+                     /translation="MGSSYNYYRMFGCFNRKFKIREREPPPDVRNAFFRYTGKANQMN
+                     ADQLFRYLVEVQGEEECTIKDAEQIIQNVASRRHHLIRRLNHSLELDDFFFYLFQDDL
+                     NGAIKSQVHHDMTAPLQHYFIYTGHNSYLTGNQLSSDCSEIPIVKALERGVRGIELDL
+                     WPNSGKDNIHVLHGRTLTTPVPLLKCLKAIRDHAFFKSPYPVIITLEDHLTPDLQAKV
+                     AEMVIQIFGEMLYYPQSECLDEFPSPEELKNRIILSTKPPKEYLESKNQRDTSPVGKD
+                     SFREDLLKKEKSEIGAEDHDTDERSDSDQDDEDGDTSTSNDQQSSQPEAPKYKSLIAV
+                     HAGKAKHGLKRALREESNKVSRLSLSEQEVVRAAEYYGTDLVRFTQKNILRVYPKGTR
+                     VTSSNFKPMTGWMHGAQMVAFNMQGYGKSLWMMHGMFRSNGSCGYVKKPQFLMDKGPN
+                     NEVFDPKVKLPVKQTLQVRVYMGDGWRLDFSHTHFDAYSPPDFYTKLYLVGVPADSRK
+                     KKTRILEDDWCPVWDEEFNFPLTVPELALLRIEVREYDMSEKDDFGGQTCLPVSELRT
+                     GIRSVPLYDKKGHKMKSVRLLMRFQFL"
+ORIGIN      
+        1 agatttagat caacctaaca cttttctctc tctagaaatg gggagtagtt acaattatta
+       61 cagaatgttt gggtgtttca accgtaaatt taagatcagg gagagggagc caccgccgga
+      121 tgtgaggaat gcgtttttcc ggtacaccgg taaagctaac cagatgaatg cggatcaact
+      181 ttttcggtat ctggtggagg tacaaggaga agaagaatgc actattaagg atgcggagca
+      241 aattatacag aatgttgcta gccggaggca ccatctcatc agacgcctta accattcact
+      301 tgaactcgat gatttctttt tttatctttt tcaggatgat ctcaatggag caatcaaatc
+      361 tcaggtgcac catgacatga ctgctccatt gcaacattat ttcatctata caggtcacaa
+      421 ttcctaccta actggaaatc aactcagcag cgattgtagt gaaattccta tagttaaggc
+      481 tctagaaaga ggtgtccgcg gaatagaact tgatttatgg ccaaactcag ggaaagataa
+      541 tattcatgtt cttcatggaa ggaccctgac tacaccagtt ccacttctta aatgcttaaa
+      601 ggccattaga gaccacgctt tttttaaatc cccttatcct gtcataatca cattggaaga
+      661 ccacctgaca ccagatcttc aagctaaagt tgcagagatg gttatccaaa tctttggaga
+      721 aatgttatat tatcctcaat cggaatgctt agatgaattt ccttcacctg aagagcttaa
+      781 gaatcgcatt attctttcta caaaaccacc caaagagtac cttgagtcaa agaatcagag
+      841 agatacatct ccagtgggaa aagattcatt tagagaggac cttttgaaga aggagaaatc
+      901 agaaattggt gccgaggatc atgacactga tgaaaggagt gacagtgatc aagatgatga
+      961 agacggtgat acctccacct ccaacgatca gcaatcatcc caaccagaag cacctaagta
+     1021 caagagtctg atagcagttc acgctgggaa ggcaaaacat ggtttgaaac gtgcactaag
+     1081 agaggaaagt aataaagtca gtcgacttag tttgagtgaa caagaagttg taagagctgc
+     1141 agaatattat ggaactgatt tggttaggtt cacacagaaa aatattctaa gggtgtaccc
+     1201 caagggaaca agagtgacct cctcaaattt caagcctatg actggctgga tgcatggagc
+     1261 tcagatggta gcattcaaca tgcagggata tgggaagtca ctttggatga tgcacgggat
+     1321 gtttaggtct aatggaagct gtggctatgt gaaaaaacct caatttctca tggataaagg
+     1381 cccaaacaat gaggtatttg atcctaaagt aaaattgcca gtgaagcaaa ctttacaggt
+     1441 tagagtatat atgggagatg ggtggcgctt ggatttcagc cacacacatt ttgatgccta
+     1501 ttcaccacca gacttctaca caaagctata tttagttgga gttcctgcag atagtcgtaa
+     1561 gaaaaagaca aggatactgg aggatgactg gtgtcccgta tgggatgaag agtttaattt
+     1621 tccattgaca gtaccagagc tggctttgct tcgaattgaa gtacgagaat atgacatgtc
+     1681 ggagaaggat gattttggtg gacaaacatg tttgcctgtc tcagagttga gaacagggat
+     1741 ccgatcagtc cctctgtatg ataagaaggg tcataagatg aaatctgtta gacttctcat
+     1801 gcgatttcaa tttctttgaa ctccaaagtt actttcctat atacacatgc ttcaatttgt
+     1861 ataaaaaaaa aa
+//
+
+LOCUS       KM210340                2734 bp    mRNA    linear   PLN 29-OCT-2014
+DEFINITION  Solanum lycopersicum phosphatidylinositol phospholipase C 7 (PLC7)
+            mRNA, complete cds.
+ACCESSION   KM210340
+VERSION     KM210340.1
+KEYWORDS    .
+SOURCE      Solanum lycopersicum (Lycopersicon esculentum)
+  ORGANISM  Solanum lycopersicum
+            Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+            Spermatophyta; Magnoliopsida; eudicotyledons; Gunneridae;
+            Pentapetalae; asterids; lamiids; Solanales; Solanaceae;
+            Solanoideae; Solaneae; Solanum; Solanum subgen. Lycopersicon.
+REFERENCE   1  (bases 1 to 2734)
+  AUTHORS   Abd-El-Haliem,A.M. and Joosten,M.H.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (17-JUL-2014) Laboratory of Phytopathology, Wageningen
+            University, Droevendaalsesteeg 1, Wageningen, Gelderland 6708 PB,
+            Netherlands
+FEATURES             Location/Qualifiers
+     source          1..2734
+                     /organism="Solanum lycopersicum"
+                     /mol_type="mRNA"
+                     /cultivar="Moneymaker"
+                     /db_xref="taxon:4081"
+     gene            1..2734
+                     /gene="PLC7"
+                     /note="SlPLC7"
+     5'UTR           1..175
+                     /gene="PLC7"
+     CDS             176..1960
+                     /gene="PLC7"
+                     /codon_start=1
+                     /product="phosphatidylinositol phospholipase C 7"
+                     /protein_id="AIU41540.1"
+                     /translation="MGSYNYYKVLGCFNRKFKISETGPPPDVSNAFSLYTEKGSHMTG
+                     DQLGRFMAEYQGEKECTVNDAEQIIQEVVNRRHHLTKYTKNAHSFELEDFFYYLFQDD
+                     LNAPIKSQVHHDMNAPLQHYFIYTGHNSYLTGNQLSSDCSEIPIIRALERGVRGIELD
+                     LWPNSAKDNVHVLHGRTLTTPVPLLTCLRSIRDHAFIKSPYPVIITLEDHLTPDLQAK
+                     VAEAVIQVFGEMLYYPRSECLEEFPSPEELKHRIILSTKPPKEYVESKHQKDRESASP
+                     VGKDSVGNDLVVKETSEIKAEGQETDERSDTDQDDEDNDTSNNQSSQKGAPQYKRLIA
+                     IRAGKAKHGVKRALKDEVIKFNRLSLDEHALEKAATNNGKDLVRFTQRNILRVFPKGT
+                     RVTSSNFKPMIGWMHGAQMVAFNMQGYGKSLWIMHGMFRSNGGCGYVRKPSFLMERGP
+                     CNELFDPKVTLPVKKTLRVRVYLGDGWRMDFSHTHFDAFSPPDFYTKLYIIGVPADAA
+                     KSKTRIIEDDWGPIWGEEFKFPLTVPELALLRIEVREYDMSDKDDFGGQTCLPVSELR
+                     PGIRAVPLYDKKGEKLKSVRLLMQFRFI"
+     3'UTR           1961..2734
+                     /gene="PLC7"
+ORIGIN      
+        1 attcaaccac atcaccatcc tatactcctc aatttttgct ccaacgcccc ttcaaagtct
+       61 tcttcccctc aaccaatttt ctacgtttac tttttttttg gttaaaaaaa ttgattgtca
+      121 gaagcatgat ccagaagaga agcaaccgaa ttagattgaa taggaacaat taaaaatggg
+      181 tagttacaat tattacaaag tgttgggatg ttttaatcgc aagtttaaga tcagcgagac
+      241 gggtccaccg ccggacgtta gcaatgcatt ttctttgtat accgaaaaag ggagtcatat
+      301 gacaggggac caattgggac gttttatggc tgagtatcaa ggtgaaaaag agtgcaccgt
+      361 caatgatgct gaacaaatta tacaggaagt tgttaatcgc cggcatcatc tcaccaagta
+      421 tactaagaat gcacattcat ttgaactcga agatttcttc tattatttat ttcaggatga
+      481 tctaaatgcc cctattaaat ctcaggtaca tcatgatatg aatgctccat tgcaacatta
+      541 tttcatttat acaggtcaca attcctacct tactggaaat caactgagca gcgattgtag
+      601 tgaaattcca atcattagag ctctggaaag aggtgtgcgg ggaatagagc tggatttatg
+      661 gccaaattca gcaaaagata atgtgcatgt tcttcatgga aggaccctga caacgcccgt
+      721 gccgctcctt acatgcttaa gatccattag ggaccatgca tttattaaat ctccttatcc
+      781 tgtcataatt acgttggaag accacttgac gccagacctt caagcaaaag ttgcagaggc
+      841 ggttatccaa gtctttgggg agatgctgta ttatcctagg tcagaatgct tagaggaatt
+      901 tccttcacct gaagagctta agcatcggat tattctttct accaaaccac ccaaagaata
+      961 tgttgagtca aagcatcaga aagacagaga aagtgcatcg ccagtcggaa aagattctgt
+     1021 tggaaatgac ctagtggtta aggaaacttc agaaattaaa gcagaaggac aagaaactga
+     1081 tgagaggagt gatactgatc aagacgatga agataatgat acctccaaca accaatcatc
+     1141 ccagaaagga gcaccccaat acaagcgttt gatagcaatt cgtgctggga aggcaaaaca
+     1201 tggggtgaag cgtgcactaa aagatgaggt tattaaattc aatcgtctaa gtttggatga
+     1261 acatgcactt gaaaaagctg caacaaataa tggaaaggat ttggtcaggt tcactcaaag
+     1321 aaatattctg agggtgtttc cgaagggaac acgagttacc tcctcaaatt ttaaacctat
+     1381 gattggatgg atgcatggag ctcagatggt tgcattcaac atgcagggat atgggaaatc
+     1441 actctggatt atgcatggga tgtttaggtc taacggaggc tgtggctatg tacgaaagcc
+     1501 tagttttctc atggaaagag gaccatgtaa tgaactattt gatcccaaag tgacattgcc
+     1561 ggtgaagaaa actttaaggg tcagagtata cttgggagat ggatggcgca tggatttcag
+     1621 ccacacgcac tttgatgcct tttctccccc agacttctac acaaagctat atataattgg
+     1681 agttccagca gatgctgcaa agagtaagac cagaataata gaggatgatt ggggtcctat
+     1741 atggggagaa gagtttaaat tccccttgac agtgccagag ctggctttgc ttcggattga
+     1801 agtacgagaa tatgacatgt cagataagga tgattttgga ggccagacat gtttgcctgt
+     1861 ttcagagttg agacctggaa tccgagcagt ccctctctat gacaagaagg gtgaaaaact
+     1921 taaatctgtt aggctgctta tgcaatttcg attcatctga ggtgcaattt cgtacttttt
+     1981 cttggtagga ttttgttctt gtatatccat cgagggattc tcgcacatcc agttcttttt
+     2041 gtacaatgga tgtgaagtta ctgtattaga aagggaaaga aaaacttcaa ggatgaagtt
+     2101 gttgattgag tctctgacat tgtttctcaa ctatttccca gtcagttagt gagaaaattt
+     2161 gtgtggatta tgttcaattg acgtcgagga tatagcacta aagcagaatg agttaaccta
+     2221 caaggtgaaa acttagaact gtagttttgc tagagtctta actcttgaga cagatttcag
+     2281 gttcattatt tcaattttca agacatttct ccaacttgca gcatagagtt cattgcaaat
+     2341 ttaagcaaat tacatactgc atgacaattc ctgtagtatt attcattatc aaaaagtcat
+     2401 atattattat tattcatcac gtaacaacct ctacacgata accttataac aatcacaata
+     2461 ttgtaatctc gcacaactat gattcatcaa aatatcaaat gatttgttag acaatattaa
+     2521 tatattaaaa taaaatcaat cacccagggc cagttggttt gagggataaa aaaaataaat
+     2581 tttgctatac aactctgcat ttcttattct atatttgatt ttcagcataa aacaatgttc
+     2641 cgtattatta taatgtgtca cttcatcatt aacgcggtgt ttattttttt atattaaatt
+     2701 ctacgtatct tatacgcact taaaatatat atat
+//
+
+LOCUS       KF462389                2526 bp    mRNA    linear   PLN 04-NOV-2013
+DEFINITION  Solanum lycopersicum cultivar WVA106 enhancer of zeste protein
+            mRNA, complete cds.
+ACCESSION   KF462389
+VERSION     KF462389.1
+KEYWORDS    .
+SOURCE      Solanum lycopersicum (Lycopersicon esculentum)
+  ORGANISM  Solanum lycopersicum
+            Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+            Spermatophyta; Magnoliopsida; eudicotyledons; Gunneridae;
+            Pentapetalae; asterids; lamiids; Solanales; Solanaceae;
+            Solanoideae; Solaneae; Solanum; Solanum subgen. Lycopersicon.
+REFERENCE   1  (bases 1 to 2526)
+  AUTHORS   Boureau,L., How Kit,A., Drevensek,S., Stammitti,L., Rainieri,M.,
+            Pribat,A., Barneche,F., Bowler,C., Hong,Y., Teyssier,E. and
+            Gallusci,P.
+  TITLE     Repression of SlEZ2, a tomato enhancer of zeste gene, leads to a
+            decrease in the trimethylation of lysine 27 on histone H3 and to
+            pleoitropic effect on sporophyte development
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 2526)
+  AUTHORS   Rainieri,M. and Gallusci,P.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (08-JUL-2013) UMR 1332 Biologie du Fruit et Pathologie,
+            INRA et Universite de Bordeaux, 71 av. Edouard Bourleaux, Villenave
+            d'Ornon 33140, France
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2526
+                     /organism="Solanum lycopersicum"
+                     /mol_type="mRNA"
+                     /cultivar="West Virginia 106"
+                     /db_xref="taxon:4081"
+     CDS             1..2526
+                     /note="polycomb group protein; SlEZ3"
+                     /codon_start=1
+                     /product="enhancer of zeste protein"
+                     /protein_id="AGZ03697.1"
+                     /translation="MAGTSSIRIGQLTIDLPIGAAEGTTIEADEFLSVTESLKQQFAS
+                     KRADYVKKRTEENAQKAYDLGELFLKLSTERKNHTVHGADSSIDLLSKRQQDVINMQT
+                     GIGSSNGDNDSNSSEDDGYASSEIRLGSSIAIKSAVCPIILPQVERLPQYTTWVFLDR
+                     NQQMPMNQSVVGCRRIYYDKNSGEALICSDSEEELLEGEQEKKFAEYEDVMLCSTIQQ
+                     IGLSDTVLELLGQFLSRKPSEVKVRYEDLVKDKYECASKNENIQGTPDLFLDNDLDAA
+                     LDSFDTLFCRRCLVFDCQSHGCSQDLIFPAEKQLPWCSPDVDKEPCCSNCYRLKEHKA
+                     GLTPSQIANHGENHVQPSEIANNTEVPGREHLSRTSNSCESDFKDIGSCSLESQQPQC
+                     GRTSRREVSPVLGSKNYFQGEGFGCQYKEAACAKNGMNYDDTLRENEFGDENNCNQEI
+                     DGEKSWRPLEKALFEKGLEMFGRSSCMIARNLLNGLKTCWEVFQYMNNFENKLSLVSD
+                     GMNGIFQGSFKGDGHTIVGNQPQRKSRFLHRRGRVRRLKYTGKSAGYNALRKRISERK
+                     DKLRRHYNPCNCQVPCGKECPCIVNGTLCEKYCGCKSFKNCKNHFRGCFCVKGQCRSR
+                     QCPCFAVDRECDPDVCRNCWISCGDGTLDIPPQRSDSNDCENMKLLLKQRQKVLLGRS
+                     DVSGWGAFLKNSVGKHEYLGEYTGEIISHHEADRRGKIYDLINSSFLFNLDDQCVLDA
+                     YRKGDKLKFANHSPDPNCYPKVIMAGGDHKVGIFAKQRICAGEELFYDYCYAPDTPHV
+                     WARKPEAPTTRKFFLEDLMCLAGVISCRMVMESMRTLGSILVK"
+ORIGIN      
+        1 atggcgggca cttcttcaat tcgcattggt caacttacca ttgatcttcc aattggtgca
+       61 gctgaaggaa caaccataga agctgatgaa ttcttatcag taaccgaatc tttgaagcaa
+      121 caatttgctt ctaaacgtgc tgattatgta aagaaaagga cagaagagaa tgcacaaaag
+      181 gcgtatgatt tgggggaatt gtttttgaag ttgtcaacag agagaaaaaa tcatacagtt
+      241 catggtgcag atagtagcat tgatcttctg tctaagagac agcaggatgt aattaatatg
+      301 caaactggga ttggttctag caatggagat aatgatagca atagttctga agatgatgga
+      361 tatgcctctt ctgaaattcg tctaggatct agcattgcca tcaaaagtgc tgtatgtccc
+      421 attatacttc ctcaagtgga aagactgcct caatatacta catgggtatt tttggataga
+      481 aatcagcaga tgcccatgaa tcaatcagtg gttggttgta gaagaattta ttatgacaag
+      541 aatagtggag aagctctaat ttgcagtgat agcgaggaag aattacttga aggcgaacaa
+      601 gaaaagaagt ttgcggagta cgaagatgtt atgctgtgtt caactatcca acaaattggc
+      661 ctgtctgata cagtgttaga attgctaggg cagttcttgt ctagaaaacc cagtgaagtc
+      721 aaggtaagat atgaagatct tgttaaggac aaatatgaat gtgcctcaaa gaacgagaac
+      781 atccaaggga ctccagattt gtttcttgac aacgatcttg atgctgctct tgattctttt
+      841 gacaccctat tttgtcgtcg atgtcttgtt tttgattgtc aatcacatgg atgttcgcag
+      901 gatctgattt ttccggctga aaaacaattg ccatggtgct ctcccgacgt ggataaggag
+      961 ccctgttgtt caaattgcta tcgcctgaag gaacacaaag ctggattgac cccctctcag
+     1021 attgctaatc atggagaaaa ccatgtccaa ccatctgaaa ttgctaataa tactgaggtg
+     1081 cctggtaggg agcatctatc aaggacatca aattcttgcg aaagcgattt caaagatatt
+     1141 ggttcatgtt cgctagaatc acaacaacct cagtgtggta gaacttctag gagggaagtc
+     1201 tctccagtat tgggcagtaa aaattatttc caaggtgagg gttttggttg ccagtataaa
+     1261 gaggctgcct gtgcaaaaaa tgggatgaat tatgacgaca cattgaggga gaatgagttt
+     1321 ggggatgaga ataactgcaa tcaagaaata gatggtgaga aatcatggag accacttgaa
+     1381 aaggctctat ttgaaaaagg tctggaaatg tttggccgca gcagctgtat gattgctcga
+     1441 aatctgctga atggtttaaa aacttgttgg gaggtgttcc agtatatgaa caatttcgag
+     1501 aataagctat cactagtaag tgatgggatg aatggaatat ttcaaggctc ttttaagggt
+     1561 gatggccata caatcgtggg taatcaacca cagagaaaat ctagattctt acatagaaga
+     1621 ggtagagttc gtcgcttaaa atacacaggg aaatcagctg gatataatgc acttaggaaa
+     1681 agaatatctg agaggaaaga caagcttcgc cgtcactata atccatgtaa ttgtcaagta
+     1741 ccttgtggaa aagagtgtcc ttgtatcgtt aatgggaccc tctgtgaaaa atattgcgga
+     1801 tgcaaaagtt tcaagaattg caagaatcac tttcgtggtt gtttttgcgt aaaaggtcag
+     1861 tgtagaagca gacaatgccc ttgctttgct gttgacaggg aatgcgatcc tgatgtttgc
+     1921 cgaaattgtt ggatcagctg tggtgatggg actctcgata ttcctccaca aagaagtgac
+     1981 agtaatgact gcgagaacat gaagcttctt ctcaaacaac gtcaaaaggt tcttcttgga
+     2041 cggtctgatg tgtctggatg gggtgctttc ttgaagaata gtgttggaaa gcacgagtac
+     2101 cttggggagt ataccggtga aataatctca caccatgaag ctgataggcg tggaaagatt
+     2161 tatgatctta taaattcttc atttctcttc aatttggatg accagtgtgt gcttgatgct
+     2221 tatcggaaag gtgacaagtt gaagttcgca aaccattctc ctgatccaaa ttgctacccc
+     2281 aaggttatta tggcgggtgg agatcacaaa gttggtatat ttgccaaaca aagaatttgt
+     2341 gcaggagagg aactcttcta tgattattgt tatgcgccag atacaccaca tgtctgggca
+     2401 aggaagcccg aggcacccac tacaagaaag ttcttcttgg aagatctgat gtgtctggct
+     2461 ggggtgattt cttgtagaat ggtgatggaa agcatgagaa ccttggggag catactggtg
+     2521 aaataa
+//
+
+LOCUS       JF807943                1397 bp    mRNA    linear   PLN 12-JUL-2012
+DEFINITION  Solanum lycopersicum golden 2-like 1 transcription factor (GLK1)
+            mRNA, complete cds.
+ACCESSION   JF807943
+VERSION     JF807943.1
+KEYWORDS    .
+SOURCE      Solanum lycopersicum (Lycopersicon esculentum)
+  ORGANISM  Solanum lycopersicum
+            Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+            Spermatophyta; Magnoliopsida; eudicotyledons; Gunneridae;
+            Pentapetalae; asterids; lamiids; Solanales; Solanaceae;
+            Solanoideae; Solaneae; Solanum; Solanum subgen. Lycopersicon.
+REFERENCE   1  (bases 1 to 1397)
+  AUTHORS   Powell,A.L., Nguyen,C.V., Hill,T., Cheng,K.L.,
+            Figueroa-Balderas,R., Aktas,H., Ashrafi,H., Pons,C.,
+            Fernandez-Munoz,R., Vicente,A., Lopez-Baltazar,J., Barry,C.S.,
+            Liu,Y., Chetelat,R., Granell,A., Van Deynze,A., Giovannoni,J.J. and
+            Bennett,A.B.
+  TITLE     Uniform ripening encodes a Golden 2-like transcription factor
+            regulating tomato fruit chloroplast development
+  JOURNAL   Science 336 (6089), 1711-1715 (2012)
+   PUBMED   22745430
+REFERENCE   2  (bases 1 to 1397)
+  AUTHORS   Powell,A.L.T., Vincente,A., Figueroa-Balderas,R., Lopez-Baltaza,J.,
+            Lam Cheng,K., Ashrafi,H., Hill,T., Cantu,D., Van Deynze,A. and
+            Bennett,A.B.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (05-APR-2011) Department of Plant Sciences, University of
+            California, Davis, One Shields Ave., Davis, CA 95616, USA
+FEATURES             Location/Qualifiers
+     source          1..1397
+                     /organism="Solanum lycopersicum"
+                     /mol_type="mRNA"
+                     /cultivar="Ailsa Craig"
+                     /db_xref="taxon:4081"
+                     /chromosome="7"
+     gene            1..1397
+                     /gene="GLK1"
+     CDS             3..1397
+                     /gene="GLK1"
+                     /note="GARP family transcription factor"
+                     /codon_start=1
+                     /product="golden 2-like 1 transcription factor"
+                     /protein_id="AFF60404.1"
+                     /translation="MLVVSPFSNTTARDERGNEMESFAIGGGGGGGDDFPDFMGENLL
+                     DSIDFDDLFVGINDGDVLPDLEMDTEILAEFSVSSGDESDVNNYSSSNNNNTFITTAI
+                     KNVERKEEIEKTGSVSASDVGSGLTTSLNQGEEIVSTQKSEESTQQRNQNIVTPKESD
+                     KGKKSSKNHNLPGKRKVKVDWTPELHRRFVQAVEQLGVDKAVPSRILEIMGIDCLTRH
+                     NIASHLQKYRSHRKHLLAREVEAASWSHRRQLYGGAPMVGGGGGKREMNPWPAPTIGF
+                     PPPPPLPPPVAPPMPHHFRPLQVWGHPSVDQSYMHMWPKHLAPSPSPQHPSPAWAPPP
+                     HHLHPPPPLDPSFWHPHHQRVQNSLTPGTPYFPAPTRYPVPGIPPVSSHGMYKVDQSN
+                     IGVRSTATLPAQPLPEPPCDFHPSKESIDAAIGDVLSKPWLPLPLGLKPPAVDSVLGE
+                     LQRQGVPKIPPTCA"
+ORIGIN      
+        1 taatgctagt tgtgtcacct tttagtaaca caacggcgag agatgaaaga ggtaatgaga
+       61 tggaaagttt cgcgatagga ggaggtggag gtggaggaga tgattttccc gattttatgg
+      121 gggagaattt actcgatagc atcgattttg acgacctttt tgttgggatt aatgatggag
+      181 atgtacttcc cgatttggaa atggatactg aaatcctcgc agaattttcc gtaagcagtg
+      241 gtgatgagtc tgatgtaaac aattatagca gtagtaataa taataatact tttattacta
+      301 ctgctatcaa aaatgtagaa agaaaagaag aaattgaaaa aacaggctcg gtttcagctt
+      361 cggatgtagg ttcgggttta acaacgagcc taaatcaagg agaagaaatt gttagtactc
+      421 aaaaaagtga agaatctacg caacaaagga atcagaatat agttacccct aaagaaagtg
+      481 ataaaggtaa aaagtcatcc aagaatcata atcttccagg caagaggaaa gtaaaggtgg
+      541 actggacacc agaattgcac agaagatttg tacaagctgt agagcaacta ggtgtagata
+      601 aggcagtccc atcaagaatt ttggagatta tgggaattga ttgtctcact cgtcataata
+      661 ttgcaagtca tcttcaaaaa tatcggtccc ataggaaaca tttgcttgca agagaagtgg
+      721 aggcagcgag ttggagccac aggaggcaac tctatggagg tgcccctatg gttggagggg
+      781 gcggaggaaa gagagagatg aatccgtggc ctgcaccaac cattgggttt ccacctcctc
+      841 ctcctcttcc gccccctgtg gcacctccaa tgcctcatca ttttagaccc ttacaggtat
+      901 ggggtcatcc atctgtcgac caatcatata tgcacatgtg gcctaaacat ctagcacctt
+      961 cgccgtctcc acaacatcca tcaccagcat gggctcctcc tcctcatcat cttcatcctc
+     1021 cacctccttt ggatccttct ttttggcatc cacatcatca acgggtacaa aattctctta
+     1081 caccaggaac tccttacttt ccagcaccaa cgagatatcc ggtaccaggc ataccacccg
+     1141 tatcgtcgca tggtatgtac aaagtagatc aatctaatat tggagttcga agtaccgcta
+     1201 ctctcccagc acaacctcta cctgaacctc catgcgactt tcatccttca aaggagagca
+     1261 tagatgcagc cattggagat gttttatcaa agccatggct accacttccc ctaggactca
+     1321 aacctccggc cgtcgatagc gtgctcggtg aattacaacg tcaaggggta cctaaaatac
+     1381 caccaacttg tgcatag
+//
+
+LOCUS       SLU50985                2037 bp    mRNA    linear   PLN 27-AUG-1997
+DEFINITION  Solanum lycopersicum pectin methylesterase PME2.1 mRNA, complete
+            cds.
+ACCESSION   U50985
+VERSION     U50985.1
+KEYWORDS    .
+SOURCE      Solanum lycopersicum (Lycopersicon esculentum)
+  ORGANISM  Solanum lycopersicum
+            Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+            Spermatophyta; Magnoliopsida; eudicotyledons; Gunneridae;
+            Pentapetalae; asterids; lamiids; Solanales; Solanaceae;
+            Solanoideae; Solaneae; Solanum; Solanum subgen. Lycopersicon.
+REFERENCE   1  (bases 1 to 2037)
+  AUTHORS   Turner,L.A., Kausch,K.D. and Handa,A.K.
+  TITLE     Isolation and Nucleotide Sequence of Two cDNAs Corresponding to
+            Tomato Fruit Pectin Methylesterase Genes (Accession Nos. U50985 and
+            U50986)(PGR96-035)
+  JOURNAL   Plant Physiol. 111, 652 (1996)
+REFERENCE   2  (bases 1 to 2037)
+  AUTHORS   Turner,L.A., Kausch,K.D. and Handa,A.K.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (08-MAR-1996) Larry A. Turner, Horticulture, Purdue
+            University, 1165 Horticulture Drive, West Lafayette, IN 47907, USA
+FEATURES             Location/Qualifiers
+     source          1..2037
+                     /organism="Solanum lycopersicum"
+                     /mol_type="mRNA"
+                     /cultivar="Rutgers"
+                     /db_xref="taxon:4081"
+                     /tissue_type="red-ripe fruit"
+     CDS             1..1653
+                     /EC_number="3.1.1.11"
+                     /codon_start=1
+                     /product="pectin methylesterase PME2.1"
+                     /protein_id="AAB67739.1"
+                     /translation="MATPQQPLLTKTHKQNSIISFKILTFVVTLFVALFLVVFLVAPY
+                     QFEIKHSNLCKTAQDSQLCLSYVSDLISNEIVTSDSDGLSILKKFLVYSVHQMNNAIP
+                     VVRKIKNQINDIREQGALTDCLELLDLSVDLVCDSIAAIDKRSRSEHANAQSWLSGVL
+                     TNHVTCLDELDSFTKAMINGTNLDELISRAKVALAMLASVTTPNDEVLRPGLGKMPSW
+                     VSSRDRKLMESSGKDIGANAVVAKDGTGKYRTLAEAVAAAPDKSKTRYVIYVKRGTYK
+                     ENVEVSSRKMNLMIIGDGMYATIITGSLNVVDGSTTFHSATLAAVGKGFILQDICIQN
+                     TAGPAKHQAVALRVGADKSVINRCRIDAYQDTLYAHSQRQFYRDSYVTGTIDFIFGNA
+                     AVVFQKCQLVARKPGKYQQNMVTAQGRTDPNQATGTSIQFCDIIASPDLKPVVKEFPT
+                     YLGRPWKKYSRTVVMESYLGGLIDPSGWAEWHGDFALKTLYYGEFMNNGPGAGTSKRV
+                     KWPGYHCITDPAEAMSFTVAKLIQGGSWLRSTDVAYVDGLYD"
+ORIGIN      
+        1 atggctactc ctcaacaacc tttgttaaca aaaacacaca aacaaaattc cataatcagc
+       61 ttcaagatcc tcacttttgt tgtaactttg tttgttgctc tcttcttagt tgtgtttctt
+      121 gttgctccat atcaatttga gattaaacat tctaatctgt gtaaaactgc acaagattcc
+      181 caactctgtc tcagttatgt ttctgattta atatccaatg aaattgtcac atctgattca
+      241 gatggactaa gtattctgaa gaaattttta gtttactctg ttcatcaaat gaacaatgca
+      301 attccagtgg ttcgcaaaat caagaatcag atcaatgaca ttcgtgaaca aggggcttta
+      361 actgattgtc ttgagcttct tgatctgtca gttgatttag tatgtgattc aattgcagca
+      421 attgataaga gaagtcgttc ggagcatgcc aatgcgcaaa gttggctaag tggtgtgctt
+      481 actaaccacg ttacgtgctt ggatgagctt gattccttta ctaaagctat gataaatgga
+      541 acgaatcttg atgagttgat ctcgagagct aaggtagcat tggcgatgct tgcgtctgtg
+      601 acaactccaa atgatgaagt tttgaggccg ggtttaggaa aaatgccatc ttgggtgagt
+      661 tcgagggata ggaagctgat ggagagttcg ggtaaggaca ttggagcgaa tgcagtggtg
+      721 gcaaaagatg gaacagggaa atatcgaaca cttgctgaag ctgttgctgc agcaccagat
+      781 aagagtaaga cgcgttatgt aatttatgta aagaggggaa cttataaaga gaatgttgag
+      841 gtgagtagca ggaaaatgaa tttgatgatt attggtgatg gcatgtatgc taccatcatt
+      901 actgggagcc ttaatgttgt cgatggatca acaaccttcc actctgccac tcttgctgca
+      961 gttggcaaag gatttatact acaggacata tgtatacaga acacagcagg accagctaaa
+     1021 caccaagctg ttgcacttcg agttggagct gataagtctg tcataaatcg ttgtcgtatc
+     1081 gatgcttatc aagacaccct ttatgcacat tctcaaaggc aattctatcg agactcctac
+     1141 gtgacaggga ctattgattt catatttggt aatgcagcag ttgtattcca gaaatgccag
+     1201 ctcgtagcta gaaaaccggg taaataccag caaaacatgg tgactgcaca aggcaggacg
+     1261 gacccaaatc aggccacggg gacatcaatt cagttttgtg atataatagc aagtcctgac
+     1321 ctaaaaccag tcgtgaaaga attcccaaca tatcttggta ggccatggaa aaaatattca
+     1381 agaactgtag tgatggaatc atacttgggt ggtctcattg atccatcggg ttgggctgag
+     1441 tggcacggag attttgcgtt aaagacattg tattatggtg aatttatgaa taatggacct
+     1501 ggtgctggta ctagtaagcg tgtcaagtgg cctggctatc attgcattac tgaccccgct
+     1561 gaagctatgt cattcactgt ggctaagctg attcagggcg gatcatggtt gaggtctact
+     1621 gacgtggcgt atgtggatgg attatatgat tagagtgata taaaattact ctttgtttat
+     1681 gtaacaagac atctttaaaa agttcaaagt aagtagtagt aatatatcca ttgaagtgcc
+     1741 acatgagcag ggcagagccg ggattaagtg tcgaaagcat aacacacaac tctagtgtga
+     1801 caagcattta catggctcat tccttactac taagtcgtca ataagttcag ttaaggggtt
+     1861 cataagttaa tatacgtata tatatttatg ttggcgataa agctgaaact gatgatgctt
+     1921 taatgtaatt atagttttct gaaaaaggat atatgtgtaa tattaggttt tccctgatgt
+     1981 ttatggttgt ggggtggtgg ttatgataaa aatatgcaag atgaaagtca ttgtgtt
+//
+
+LOCUS       AY571333                 594 bp    mRNA    linear   PLN 11-FEB-2005
+DEFINITION  Brassica oleracea water stress induced protein mRNA, complete cds.
+ACCESSION   AY571333
+VERSION     AY571333.1
+KEYWORDS    .
+SOURCE      Brassica oleracea (wild cabbage)
+  ORGANISM  Brassica oleracea
+            Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+            Spermatophyta; Magnoliopsida; eudicotyledons; Gunneridae;
+            Pentapetalae; rosids; malvids; Brassicales; Brassicaceae;
+            Brassiceae; Brassica.
+REFERENCE   1  (bases 1 to 594)
+  AUTHORS   Li,Z., Zhao,L., Kai,G., Yu,S., Cao,Y., Pang,Y., Sun,X. and Tang,K.
+  TITLE     Cloning and expression analysis of a water stress-induced gene from
+            Brassica oleracea
+  JOURNAL   Plant Physiol. Biochem. 42 (10), 789-794 (2004)
+   PUBMED   15596098
+REFERENCE   2  (bases 1 to 594)
+  AUTHORS   Li,Z.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (11-MAR-2004) Plant Biotechnology Research Centre,
+            Shanghaijiaotong University, 1954 Huashan Road, Shanghai 200030,
+            China
+FEATURES             Location/Qualifiers
+     source          1..594
+                     /organism="Brassica oleracea"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:3712"
+                     /note="authority: Brassica oleracea L."
+     CDS             60..347
+                     /note="BoWS"
+                     /codon_start=1
+                     /product="water stress induced protein"
+                     /protein_id="AAS77419.1"
+                     /translation="MAGIINKIGDALHIGGGNKEDEHKKEEHKKHADEHKSGEHKEGI
+                     VDKIKDKIQGGEGHSSGDHKHDGEKKKKKDKKEKKHHHDGHHSSSSDSDSD"
+ORIGIN      
+        1 ggaggatcca acacccataa aagagtgatt aaatttagta gaaaagaaag agatcagata
+       61 tggcaggaat catcaacaag atcggagatg ctctccacat cggaggaggc aacaaggaag
+      121 atgagcacaa gaaggaggaa cacaagaaac acgccgacga gcacaagagt ggtgagcaca
+      181 aggagggtat cgttgataag atcaaagaca agatccaagg cggagaaggc cacagcagcg
+      241 gagaccacaa acatgacggt gagaagaaaa agaagaagga caagaaggag aagaaacatc
+      301 atcatgatgg tcaccacagc agcagcagtg acagcgacag cgattaaagg ttaggaggac
+      361 gtgaggagaa ctattaatgc tgcggttgtc tgttcctatc atctcactct ttgacagaga
+      421 ggggttaatt gaaaagagaa gagtgcatct gtcttccttt attatctaat tttcttttaa
+      481 ttgtcatttt cttctcttat gtttatgttc tcttgtcaga aaaaaataaa cctcatgttt
+      541 cgtaatctat attaataaaa tcgagtttct aactaaaaaa aaaaaaaaaa aaaa
+//
+
+LOCUS       BNACYTB5A                738 bp    mRNA    linear   PLN 27-APR-1993
+DEFINITION  Brassica oleracea cytochrome b-5 mRNA, complete cds.
+ACCESSION   M87514
+VERSION     M87514.1
+KEYWORDS    cytochrome b-5.
+SOURCE      Brassica oleracea (wild cabbage)
+  ORGANISM  Brassica oleracea
+            Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+            Spermatophyta; Magnoliopsida; eudicotyledons; Gunneridae;
+            Pentapetalae; rosids; malvids; Brassicales; Brassicaceae;
+            Brassiceae; Brassica.
+REFERENCE   1  (bases 1 to 738)
+  AUTHORS   Kearns,E.V., Keck,P. and Somerville,C.R.
+  TITLE     Nucleotide sequence of cDNA for cytochrome b5 from cauliflower
+            (Brassica oleracea L.)
+  JOURNAL   Unpublished
+COMMENT     Original source text: Brassica oleracea florets cDNA to mRNA.
+FEATURES             Location/Qualifiers
+     source          1..738
+                     /organism="Brassica oleracea"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:3712"
+                     /tissue_type="florets"
+     gene            1..738
+                     /gene="cytochrome b-5"
+     CDS             96..500
+                     /gene="cytochrome b-5"
+                     /codon_start=1
+                     /product="cytochrome b-5"
+                     /protein_id="AAA32990.1"
+                     /translation="MASEKKVLGFEEVSQHNKTKDCWLIISGKVYDVTPFMDDHPGGD
+                     EVLLSSTGKDATNDFEDVGHSDTARDMMEKYYIGEIDSSTVPATRTYVAPVQPAYNQD
+                     KTPEFMIKILQFLVPILILGLALVVRQYTKKE"
+     polyA_site      489..508
+                     /gene="cytochrome b-5"
+                     /note="putative"
+     polyA_site      580..599
+                     /gene="cytochrome b-5"
+ORIGIN      
+        1 agttctcaag taggtgaaga gttaccccac caggtgctat cgcaattctg aatctgaaag
+       61 cagaaagatc ccccaccttt gatttgagga gagagatggc ttcagagaag aaggttctag
+      121 gtttcgaaga agtttcgcag cacaacaaaa ccaaggattg ttggcttatt atctccggca
+      181 aggtctatga tgtgacccct ttcatggatg atcatcccgg tggcgatgaa gtgttattgt
+      241 cctcaacagg gaaagatgct acgaatgact ttgaagacgt tggtcacagc gacaccgcga
+      301 gggacatgat ggagaagtac tacattggcg agatcgattc gtctactgtt ccagcgacaa
+      361 ggacatacgt tgcaccagtg caacccgcgt acaaccaaga caagacacca gaattcatga
+      421 tcaagatcct tcagttcctt gttccaatct tgatcttggg tcttgctctc gtcgtccgtc
+      481 agtatactaa gaaagagtag aagcagagag aggcttgcgg tattgcttcc cattggataa
+      541 ctctttctca tatctctgta tttcgaaacc ttggtttggt tctagattgc acacctctgt
+      601 tctaaaaatt attcttgtta gaactactat aaaccaataa tcaatgtgtt gttagtgttt
+      661 tcgttggtgg tatcatctgg tttattttgt gtgttgattg agatgtgttc aactttgatg
+      721 atcaaataaa agagtgtt
+//
+
+LOCUS       JN859553                1155 bp    DNA     linear   PLN 19-NOV-2013
+DEFINITION  Brassica oleracea FAD2-2 gene, complete cds.
+ACCESSION   JN859553
+VERSION     JN859553.1
+KEYWORDS    .
+SOURCE      Brassica oleracea (wild cabbage)
+  ORGANISM  Brassica oleracea
+            Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+            Spermatophyta; Magnoliopsida; eudicotyledons; Gunneridae;
+            Pentapetalae; rosids; malvids; Brassicales; Brassicaceae;
+            Brassiceae; Brassica.
+REFERENCE   1  (bases 1 to 1155)
+  AUTHORS   Lee,K.R., In Sohn,S., Jung,J.H., Kim,S.H., Roh,K.H., Kim,J.B.,
+            Suh,M.C. and Kim,H.U.
+  TITLE     Functional analysis and tissue-differential expression of four FAD2
+            genes in amphidiploid Brassica napus derived from Brassica rapa and
+            Brassica oleracea
+  JOURNAL   Gene 531 (2), 253-262 (2013)
+   PUBMED   24029080
+REFERENCE   2  (bases 1 to 1155)
+  AUTHORS   Lee,K.-R., Kim,S.-H., Roh,K.-H., Kim,J.-B. and Kim,H.U.
+  TITLE     Cloning of Brassica oleracea microsomal delta-12 oleate desaturase
+            (BrFAD2) genes
+  JOURNAL   Unpublished
+REFERENCE   3  (bases 1 to 1155)
+  AUTHORS   Lee,K.-R., Kim,S.-H., Roh,K.-H., Kim,J.-B. and Kim,H.U.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (12-OCT-2011) Agricultural Bio-resources, National
+            Academy of Agricultural Science, RDA, 150 Suin-ro, Suwon,
+            Gyeonggi-do 441-707, Republic of Korea
+FEATURES             Location/Qualifiers
+     source          1..1155
+                     /organism="Brassica oleracea"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:3712"
+     mRNA            <1..>1155
+                     /product="FAD2-2"
+     CDS             1..1155
+                     /note="BoFAD2-2"
+                     /codon_start=1
+                     /product="FAD2-2"
+                     /protein_id="AFC41107.1"
+                     /translation="MGAGGRMQVSPPSSSPETNTLKRVPCETPPFTLGDLKKAIPPHC
+                     FKRSIPRSFSYLLFDIIISSSLYHLSTAYFPLLPHPLPYLAWPLYWACQGCVLTGLWV
+                     IAHECGHHAFSDHQLLDDAVGLVFHSFLLVPYFSWKYSHRRHHSNTGSLERDEVFVPK
+                     KKSDVKWYGKYLNNPLGRTVMLTVQFTLGWPLYLAFNVSGRPYSDGFACHFHPNAPIY
+                     NDRERLQIYISDAGVLSVCYGLYRYAGSRGVASMVCVYGVPLMIVNCFLVLITYLQHT
+                     HPSLPHYDSSEWDWLRGALATVDRDYGILNKVFHNITDTHVAHHLFSTMPHYNAMEAT
+                     KAIKPILGEYYQFDGTPVVKAMWREAKECIYVEPDRQGEKKGVFWYNNKL"
+ORIGIN      
+        1 atgggtgcag gtggaagaat gcaagtctct cctccctcca gctcccccga aaccaacacc
+       61 ctcaaacgcg tcccctgcga gacaccaccc ttcactctcg gagacctcaa gaaagcaatc
+      121 ccacctcact gcttcaaacg ctccatcccg cgctccttct cctacctcct cttcgacatc
+      181 atcatctcct cctccctcta ccacctctcc acagcctact tccctctcct cccccaccct
+      241 ctcccttacc tcgcctggcc cctctactgg gcctgccaag gctgcgtcct aacgggcctc
+      301 tgggtcatcg cccacgagtg cggccaccac gccttcagcg accaccagtt gctggacgac
+      361 gccgtgggcc tcgtcttcca ctccttcctc ctcgtccctt acttctcctg gaagtacagc
+      421 catcgacgcc accattccaa caccggatcc ctcgagaggg atgaagtgtt cgtccccaag
+      481 aagaaatccg acgtcaagtg gtacggcaag tacctcaaca acccgctagg acgcacggtg
+      541 atgctaaccg tccagttcac gctcggctgg ccgttgtact tagccttcaa cgtctctgga
+      601 agaccttaca gcgacggttt cgcttgccat ttccacccga acgctcccat ctacaacgac
+      661 cgcgagcgtc tccagatata catctctgac gctggcgtcc tctccgtatg ttacggtctc
+      721 taccgctacg ctggttcgcg aggagtggcc tcgatggtct gtgtctacgg agttccgctt
+      781 atgattgtca actgtttcct cgtcttgatc acttacttgc agcacacgca cccttcgctg
+      841 cctcactatg attcttcgga gtgggattgg ttgagaggag ctttggctac tgtggataga
+      901 gactatggaa tcttgaacaa ggtgtttcat aacatcacgg acacgcacgt ggcgcatcat
+      961 ctgttctcga cgatgccgca ttataacgcg atggaagcga ccaaggcgat aaagccgata
+     1021 cttggagagt attaccagtt tgatggaacg ccggtggtta aggcgatgtg gagggaggcg
+     1081 aaggagtgta tctatgttga accggatagg caaggtgaga agaaaggtgt gttctggtac
+     1141 aacaataagt tatga
+//
+
+LOCUS       JN859552                1155 bp    DNA     linear   PLN 19-NOV-2013
+DEFINITION  Brassica oleracea FAD2-1 gene, complete cds.
+ACCESSION   JN859552
+VERSION     JN859552.1
+KEYWORDS    .
+SOURCE      Brassica oleracea (wild cabbage)
+  ORGANISM  Brassica oleracea
+            Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+            Spermatophyta; Magnoliopsida; eudicotyledons; Gunneridae;
+            Pentapetalae; rosids; malvids; Brassicales; Brassicaceae;
+            Brassiceae; Brassica.
+REFERENCE   1  (bases 1 to 1155)
+  AUTHORS   Lee,K.R., In Sohn,S., Jung,J.H., Kim,S.H., Roh,K.H., Kim,J.B.,
+            Suh,M.C. and Kim,H.U.
+  TITLE     Functional analysis and tissue-differential expression of four FAD2
+            genes in amphidiploid Brassica napus derived from Brassica rapa and
+            Brassica oleracea
+  JOURNAL   Gene 531 (2), 253-262 (2013)
+   PUBMED   24029080
+REFERENCE   2  (bases 1 to 1155)
+  AUTHORS   Lee,K.-R., Kim,S.-H., Roh,K.-H., Kim,J.-B. and Kim,H.U.
+  TITLE     Cloning of Brassica oleracea microsomal delta-12 oleate desaturase
+            (BrFAD2) genes
+  JOURNAL   Unpublished
+REFERENCE   3  (bases 1 to 1155)
+  AUTHORS   Lee,K.-R., Kim,S.-H., Roh,K.-H., Kim,J.-B. and Kim,H.U.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (12-OCT-2011) Agricultural Bio-resources, National
+            Academy of Agricultural Science, RDA, 150 Suin-ro, Suwon,
+            Gyeonggi-do 441-707, Republic of Korea
+FEATURES             Location/Qualifiers
+     source          1..1155
+                     /organism="Brassica oleracea"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:3712"
+     mRNA            <1..>1155
+                     /product="FAD2-1"
+     CDS             1..1155
+                     /note="BoFAD2-1"
+                     /codon_start=1
+                     /product="FAD2-1"
+                     /protein_id="AFC41106.1"
+                     /translation="MGAGGRMQVSPPSKKSETDTIKRVPCETPPFTVGELKKAIPPHC
+                     FKRSIPRSFSYLIWDIIIASCFYYVATTYFPLLPHPLSYFAWPLYWACQGCVLTGVWV
+                     IAHECGHHAFSDYQWLDDTVGLIFHSFLLVPYFSWKYSHRRHHSNTGSLERDEVFVPK
+                     KKSDIKWYGKYLNNPLGRTVMLTVQFTLGWPLYLAFNVSGRPYDGGFACHFHPNAPIY
+                     NDRERLQIYISDAGILAVCYGLYRYAAAQGVASMVCFYGVPLLIVNGFLVLITYLQHT
+                     HPSLPHYDSSEWDWLRGALATVDRDYGILNKVFHNITDTHVAHHLFSTMPHYHAMEAT
+                     KAIKPILGEYYQFDGTPVVKAMWREAKECIYVEPDRQGEKKGVFWYNNKL"
+ORIGIN      
+        1 atgggtgcag gtggaagaat gcaagtgtct cctccctcca agaagtctga aaccgacacc
+       61 atcaagcgcg taccctgcga gacaccgccc ttcactgtcg gagaactcaa gaaagcaatc
+      121 ccaccgcact gtttcaaacg ctcgatccct cgctctttct cctacctcat ctgggacatc
+      181 atcatagcct cctgcttcta ctacgtcgcc accacttact tccctctcct ccctcaccct
+      241 ctctcctact tcgcctggcc tctctactgg gcctgccaag ggtgcgtcct aaccggcgtc
+      301 tgggtcatag cccacgagtg cggccaccac gccttcagcg actaccagtg gcttgacgac
+      361 accgtcggtc tcatcttcca ctccttcctc ctcgtccctt acttctcctg gaagtacagt
+      421 catcgacgcc accattccaa cactggctcc ctagagagag acgaagtgtt tgtccccaag
+      481 aagaagtccg acatcaagtg gtacggcaag tacctcaaca accctttggg acgcaccgtg
+      541 atgttaacgg ttcagttcac tctcggctgg ccgttgtact tagccttcaa cgtctcggga
+      601 agaccttacg acggcggctt cgcttgccat ttccacccca acgctcccat ctacaacgac
+      661 cgcgagcgtc tccagatata catctccgac gctggcatcc tcgccgtctg ctacggtctc
+      721 taccgttacg ccgccgcgca gggagtggcc tcgatggtct gcttctacgg agtcccgctt
+      781 ctgattgtca atggtttcct cgtcttgatc acttacttgc agcacacgca tccttccctg
+      841 cctcactacg attcgtccga gtgggattgg ttgaggggag ctttggctac cgttgacaga
+      901 gactacggaa tcttgaacaa ggtcttccac aatattaccg acacgcacgt ggcgcatcat
+      961 ctgttctcca cgatgccgca ttatcacgcg atggaagcta cgaaggcgat aaagccgata
+     1021 ctgggagagt attatcagtt cgatgggacg ccggtggtta aggcgatgtg gagggaggcg
+     1081 aaggagtgta tctatgtgga accggacagg caaggtgaga agaaaggtgt gttctggtac
+     1141 aacaataagt tatga
+//
+
+LOCUS       JQ231216                1388 bp    mRNA    linear   PLN 15-FEB-2013
+DEFINITION  Brassica oleracea chloroplast ribulose-1,5-bisphosphate
+            carboxylase/oxygenase activase (RCA) mRNA, complete cds; nuclear
+            gene for chloroplast product.
+ACCESSION   JQ231216
+VERSION     JQ231216.1
+KEYWORDS    .
+SOURCE      Brassica oleracea (wild cabbage)
+  ORGANISM  Brassica oleracea
+            Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+            Spermatophyta; Magnoliopsida; eudicotyledons; Gunneridae;
+            Pentapetalae; rosids; malvids; Brassicales; Brassicaceae;
+            Brassiceae; Brassica.
+REFERENCE   1  (bases 1 to 1388)
+  AUTHORS   Zhou,S., Hu,Z., Zhu,M., Zhang,B., Li,Y. and Chen,G.
+  TITLE     Cloning, Bioinformatics and Expression Analysis of a Novel Rubisco
+            Activase Gene, BoRCA, from Brassica oleracea
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 1388)
+  AUTHORS   Zhou,S., Hu,Z., Zhu,M., Zhang,B., Li,Y. and Chen,G.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (02-DEC-2011) Bioengineering College, Chongqing
+            University, 174 Shapingba Main Street, Chongqing 400044, China
+FEATURES             Location/Qualifiers
+     source          1..1388
+                     /organism="Brassica oleracea"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:3712"
+     gene            1..1388
+                     /gene="RCA"
+     CDS             24..1340
+                     /gene="RCA"
+                     /codon_start=1
+                     /product="chloroplast ribulose-1,5-bisphosphate
+                     carboxylase/oxygenase activase"
+                     /protein_id="AFH35543.1"
+                     /translation="MAAAVSTVGAINRAPLSLNGSGAGAASVPATTFLGKKAVTASRF
+                     TQSNNKKSNGSFKVVAVKEDKQTDGDRWKGLAYDTSDDQQDITRGKGMVDSVFQAPMG
+                     TGTHNAVLSSYEYISQGLKQYNLDNMMDGLFIAPAFMDKLVVHITKNFLTLPNIKVPL
+                     ILGIWGGKGQGKSFQCELVMAKMGINPIMMSAGELESGNAGEPAKLIRQRYREAADMI
+                     KKGKMCCLFINDLDAGAGRMGGTTQYTVNNQMVNATLMNIADNPTNVQLPGMYNKEEN
+                     ARVPIIVTGNDFSTLYAPLIRDGRMEKFYWAPTREDRIGVCKGIFRTDNVKDEDIVTL
+                     VDQFPGQSIDFFGALRARVYDDEVRKFVEGLGVEKIGKRLVNSREGPPVFEQPAMTLE
+                     KLMEYGNMLVMEQENVKRVQLADQYLNEAALGDANADAIGRGTFYG"
+ORIGIN      
+        1 tgtgacgcaa cactcgtggg gaaatggccg ccgcagtttc caccgtcggt gccatcaaca
+       61 gagctccgtt gagcttgaac gggtcaggag caggagctgc ttcagtccca gctacgacct
+      121 tcttgggaaa gaaagctgta accgcgtcga gattcacaca gagcaacaac aagaagagca
+      181 acggatcatt caaagtggtt gctgtcaaag aagacaaaca aaccgatgga gacaggtgga
+      241 agggacttgc ctacgacacg tccgatgacc aacaagacat caccagaggc aaaggtatgg
+      301 ttgactctgt cttccaagct cccatgggaa ccggaactca caatgccgtc cttagctcct
+      361 atgagtacat tagccaaggt cttaagcagt acaacttgga caacatgatg gatgggcttt
+      421 tcattgctcc tgctttcatg gacaagcttg ttgttcacat caccaagaac ttcctgacct
+      481 tgcctaacat caaggttcca cttattttgg gtatttgggg aggcaaaggt caaggtaaat
+      541 ccttccagtg tgagcttgtc atggccaaga tgggcatcaa cccaatcatg atgagtgctg
+      601 gagagcttga gagtggaaac gcaggagagc cagccaagct gatccgtcaa aggtaccgtg
+      661 aggcagcaga catgatcaaa aagggaaaaa tgtgttgtct attcatcaac gatctcgacg
+      721 ctggtgctgg tcgtatgggt ggtactactc agtacacagt caacaaccag atggttaacg
+      781 caaccctcat gaacattgct gataacccaa ccaacgtcca gctcccggga atgtacaaca
+      841 aggaagaaaa cgcacgtgtc cctatcatcg tcaccggtaa cgatttctcc actctctacg
+      901 cacctctcat ccgtgacggg cgtatggaga aattctactg ggcacccaca cgtgaggacc
+      961 gtattggtgt ctgcaagggt atcttcagga ctgataacgt taaggatgaa gacattgtca
+     1021 cgcttgttga ccagttccct ggacaatcta tcgatttctt tggtgcgttg agggcaagag
+     1081 tgtacgatga tgaagtgagg aagttcgttg agggacttgg agtggagaag ataggaaaga
+     1141 ggctggtgaa ctcgagggaa ggtcctccag tgttcgagca accagcgatg actcttgaga
+     1201 agcttatgga gtatggaaac atgcttgtga tggagcaaga gaacgtcaag agagtccaac
+     1261 ttgctgacca ataccttaac gaggctgcct tgggagacgc gaacgcggac gccatcggcc
+     1321 gcggaacttt ctatggttag aactcgaggg aaagcagcac agcaagtgaa cctccctgtt
+     1381 ccagaagg
+//
+
