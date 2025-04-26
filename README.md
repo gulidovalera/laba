@@ -12,7 +12,7 @@
 
 ## Бонус ;)
 - [Распределяющая Викторина Хогвартса (сайт)](https://gulidovalera.github.io/slytherin/)
-- вариант виткорины через терминал [код](https://github.com/gulidovalera/laba/blob/лаба-1/Bonus/hat_hogwarts.py)
+- вариант викторины через терминал [код](https://github.com/gulidovalera/laba/blob/лаба-1/Bonus/hat_hogwarts.py)
 ___
 
 # Лабораторная работа 1: "Моделирование роста популяции кроликов с использованием рекуррентных отношений"
