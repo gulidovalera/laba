@@ -206,11 +206,7 @@ class HogwartsQuiz:
         
         for house, points in sorted_houses:
             print(f"{house}: {points} баллов")
-        
-        winning_house = sorted_houses[0][0]
-        print(f"\nРаспределяющая Шляпа отправляет вас в... {winning_house.upper()}!\n")
-        print(self.house_descriptions[winning_house])
-        
+            
         # Добавим немного магии :)
         colors = {
             "Гриффиндор": "\033[91m",    # Красный
@@ -219,8 +215,12 @@ class HogwartsQuiz:
             "Когтевран": "\033[94m",
             "Магл": "\033[95m"
         }
-        print(f"{colors[winning_house]}*магические искры*")
-        print("\033[0m")  # Сброс цвета
+         
+        winning_house = sorted_houses[0][0]
+        print(f"\nРаспределяющая Шляпа отправляет вас в...{colors[winning_house]}{winning_house.upper()}!\n")
+        print("\033[0m")
+        print(self.house_descriptions[winning_house])
+        
 
 if __name__ == "__main__":
     quiz = HogwartsQuiz()
