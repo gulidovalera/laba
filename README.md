@@ -3,7 +3,7 @@
 ## Файлы с кодом
 - [Лаба-1 в1.py](https://github.com/gulidovalera/laba/blob/лаба-1/Python/Лаба-1%20в1.py) - Лабораторная работа 1
 - [лаба2 (1).py](https://github.com/gulidovalera/laba/blob/лаба-1/Python/лаба2%20(1).py) - Лабораторная работа 2
-- [В3задание2(2).py](https://github.com/gulidovalera/laba/blob/Labi/Python/%23В3задание1.py), [В1задание1(2).py](https://github.com/gulidovalera/laba/blob/Labi/Python/%23В3задание2(2).py) - Лабораторная работа 3
+- [лаба3задание1(3).py](https://github.com/gulidovalera/laba/blob/Labi/Python/%23В3задание1.py), [лаба3задание2(3).py](https://github.com/gulidovalera/laba/blob/Labi/Python/%23В3задание2(2).py) - Лабораторная работа 3
 - [лаба4_В3_1задание.py](https://github.com/gulidovalera/laba/blob/лаба-1/Python/лаба4_В3_1задание.py), [лаба4_В3_2задание.py](https://github.com/gulidovalera/laba/blob/лаба-1/Python/лаба4_В3_2задание.py) - Лабораторная работа 4
 ---
 
